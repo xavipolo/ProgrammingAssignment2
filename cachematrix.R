@@ -35,7 +35,7 @@ cacheSolve <- function(x, ...) {
   
   if(is.null(invMat)) {
     #not cached - calculate inverse matrix
-    message('solve it')
+    message('calculate inverse matrix')
     
     invMat <- solve( x$get() )
     x$setInverse(invMat)
